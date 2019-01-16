@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="60 seconds">
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-M-d HH:mm:ss} %t %p %m%n</pattern>
+        </encoder>
+    </appender>
+    <!-- name包必须能够扫描到所以类，包括启动类 -->
+    <root level="info" additivity="false" name="com.didichuxing.chesheng.chewu">
+        <appender-ref ref="stdout" />
+    </root>
+</configuration>
